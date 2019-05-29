@@ -31,7 +31,7 @@
         <!--WindowのCloseキャンセル処理に対応する場合は、WindowCloseCancelBehaviorの使用を検討してください-->
 
     </i:Interaction.Triggers>
-    
+
     <Grid>
         <StackPanel>
             <UniformGrid  Columns="5">
@@ -42,5 +42,11 @@
                 <TextBlock  Height="20" Width="70"   Text="ランキング" RenderTransformOrigin="-1.72,1.6"/>
             </UniformGrid>
         </StackPanel>
+        <TextBlock>
+               <Hyperlink>
+               <TextBlock Text="{Binding ShowRankingCommand}" />
+                OPEN!
+               </Hyperlink>
+               </TextBlock>
     </Grid>
 </Window>
