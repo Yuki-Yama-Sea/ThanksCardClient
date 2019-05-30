@@ -62,6 +62,10 @@ namespace ThanksCardClient.ViewModels
 
         public void Initialize()
         {
+            /*      初期画面にMypageを出力させる      ゆうき  */
+            var message = new TransitionMessage(typeof(Views.Mypage), new MainWindowViewModel(), TransitionMode.Modal, "ShowMypage");
+            Messenger.Raise(message);
+
         }
     }
 }
